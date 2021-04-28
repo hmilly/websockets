@@ -1,0 +1,125 @@
+body {
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerdiv {
+    display: flex;
+    top: 0;
+}
+
+.userName,
+.room {
+    display: flex;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    background-color: rgb(87, 0, 87);
+    font-size: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.closebtn {
+    display: flex;
+    align-self: flex-end;
+    background-color: red;
+    color: white;
+}
+
+.openMsg {
+    color: lightblue;
+    font-style: oblique;
+}
+
+.closeMsg {
+    color: rgb(255, 36, 84);
+    font-style: oblique;
+}
+
+.userName {
+    color: rgb(255, 236, 210);
+    font-weight: 400;
+    justify-content: start;
+}
+
+.messenger {
+    height: 500px;
+    width: 300px;
+    background-color: purple;
+    border-radius: 5px;
+    border: 3px solid rgba(42, 1, 84, 0.754);
+    position: relative;
+}
+
+.message_form {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+.name_form {
+    display: flex;
+}
+
+input {
+    flex-grow: 1;
+    font-size: small;
+    font-weight: bold;
+    padding: 1% 2%;
+    color: rgba(60, 0, 68, 0.974);
+    border-radius: 5px;
+    border: 2px solid rgba(223, 0, 252, 0.754);
+}
+
+input:focus {
+    background-color: lightpink;
+    color: rgba(19, 51, 181, 0.754);
+}
+
+button {
+    color: purple;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(255, 110, 255);
+    border-radius: 5px;
+    border: 2px solid rgba(223, 0, 252, 0.754);
+}
+
+button:hover {
+    background-color: lightpink;
+    color: rgba(19, 51, 181, 0.754);
+    border: 2px solid goldenrod;
+}
+
+ul {
+    list-style-type: none;
+    color: peachpuff;
+    width: 100%;
+    max-width: 85%;
+    height: 100%;
+    max-height: 78%;
+    word-wrap: break-word;
+    overflow-y: scroll;
+}
+
+ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0);
+    background-color: #a8f2ea;
+}
+
+ul::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border: 2px solid #555555;
+}
